@@ -8,8 +8,7 @@ import Header from "../../components/Header";
 import Services from "../../components/Services";
 import AboutUs from "../../components/AboutUs";
 import Footer from "../../components/Footer";
-import Services2 from '../../components/Services2';
-import Services3 from '../../components/Services3';
+
 // import Mission from "../../components/Mission";
 import "./Home.css";
 import Mission from "../../components/Mission";
@@ -17,7 +16,9 @@ import Mission from "../../components/Mission";
 // _________________________
 // _________________________
 // _________________________
-
+import HttpIcon from "@material-ui/icons/Http";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import WebIcon from "@material-ui/icons/Web";
 // additional dependencies import
 // _________________________
 // _________________________
@@ -33,7 +34,7 @@ const Home = () => {
       <div className="home_content">
         <AboutUs />
         <Mission />
-       
+
         <div className="service_component_container">
           <Zoom>
             <div className="services_container">
@@ -65,9 +66,18 @@ const Home = () => {
               title={"Property Management"}
               text={"regular preventive maintenance visits."}
             /> */}
-           <Services />
-           <Services2/>
-            <Services3/>
+            <Services
+              title={"Web development"}
+              icon={<HttpIcon fontSize="large" />}
+            />
+            <Services
+              title={"App development"}
+              icon={<PhoneAndroidIcon fontSize="large" />}
+            />
+            <Services
+              title={"UI-UX design"}
+              icon={<WebIcon fontSize="large" />}
+            />
           </div>
         </div>
       </div>

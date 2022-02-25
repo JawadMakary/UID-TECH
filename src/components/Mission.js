@@ -13,10 +13,8 @@ const Mission = () => {
             </div>
             <div className="mission_text">
               <p className="mission_p">
-                Managing the building where I live was an added experience. Many
-                properties were left without care or even mismanaged. This has
-                triggered me to take in charge of them in the most professional
-                and legal way.
+                Our mission is to help companies to find the optimal solution
+                for their business.
               </p>
             </div>
           </div>
