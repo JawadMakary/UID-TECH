@@ -1,0 +1,86 @@
+div#about {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.react-reveal.aboutUs_right {
+  margin-left: 30px;
+}
+.react-reveal.aboutUs_left {
+  margin-left: 15px;
+}
+
+.aboutUs_img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+.aboutUs_right {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+.aboutUs_text_container {
+  width: 70%;
+  margin-top: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.aboutUs_container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.aboutUs {
+  margin-top: 35px;
+}
+span.aboutUs_text {
+  line-height: 2;
+}
+.aboutUs_header {
+  color: var(--primary-dark-color);
+}
+/* for responsive services design */
+/* ____________________________________________________________________________________ */
+/* ____________________________________________________________________________________ */
+/* ____________________________________________________________________________________ */
+/* For Tablet View */
+@media screen and (max-width: 768px) {
+  .aboutUs_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+  .aboutUs_title {
+    text-align: center;
+  }
+  .aboutUs_img {
+    width: 300px;
+    height: 300px;
+  }
+  .aboutUs_right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .react-reveal.aboutUs_right {
+    margin-top: 10px;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .react-reveal.aboutUs_right {
+    text-align: center;
+    margin-right: 20px;
+  }
+  .aboutUs_text_container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

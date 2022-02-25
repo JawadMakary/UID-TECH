@@ -1,0 +1,41 @@
+.mission_container {
+  height: 400px;
+  background-image: url("https://i.imgur.com/kWoBdG7.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
+}
+.mission_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mission {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.mission_header {
+  color: var(--primary-dark-color);
+}
+.mission_text {
+  margin-top: 20px;
+  width: 70%;
+  line-height: 1.8;
+  text-align: center;
+}
+/* for responsive services design */
+/* ____________________________________________________________________________________ */
+/* ____________________________________________________________________________________ */
+/* ____________________________________________________________________________________ */
+/* For Mobile View */
+@media screen and (max-width: 480px) {
+  .mission_text {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

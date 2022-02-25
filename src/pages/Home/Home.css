@@ -1,0 +1,44 @@
+.team_header_title {
+  text-align: center;
+  color: var(--primary-dark-color);
+}
+.service_component_container {
+  margin-top: 50px !important;
+}
+.service_component_container > div {
+  margin-top: 50px !important;
+}
+
+/* header underline */
+.title-underline {
+  text-align: center;
+  padding: 20px 0;
+  color: var(--primary-light-color);
+  height: 21px;
+}
+
+.title-underline span {
+  width: 105px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.title-underline span:before,
+.title-underline span:after {
+  width: 4px;
+  height: 2px;
+  background: inherit;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -9px;
+}
+.title-underline span:after {
+  left: auto;
+  right: -9px;
+}
+h2.services_header {
+  text-align: center;
+}

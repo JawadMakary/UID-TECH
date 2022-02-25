@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+:root {
+  --primary-light-color: #bccbde;
+  --primary-dark-color: #3056df;
+}
+h1,
+h2 {
+  font-size: 22px;
+}
+h3,
+h4 {
+  font-size: 18px;
+}
+p,
+span,
+li {
+  font-family: Rubik ;
+  font-size: 15px;
+}
+html,
+body,
+#app div {
+  height: 100%;
+}
+
+.loading_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading_spinner {
+  display: flex;
+}

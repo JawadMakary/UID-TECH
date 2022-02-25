@@ -1,0 +1,122 @@
+nav.header {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+.header_left {
+  display: flex;
+}
+
+.header_left_img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.header_right {
+  display: flex;
+
+  margin-right: 10px;
+}
+
+.header_list_item {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  margin: 20px 15px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: var(--primary-dark-color);
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.15px;
+}
+
+.header_list_item:hover {
+  color: var(--primary-light-color);
+}
+
+/* for responsive burger menu design */
+/* ____________________________________________________________________________________ */
+/* ____________________________________________________________________________________ */
+/* ____________________________________________________________________________________ */
+
+.MuiSvgIcon-root {
+  color: var(--primary-dark-color);
+}
+
+.nav_body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-dark-color);
+
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-light-color);
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  -webkit-touch-callout: none;
+}
+
+#menu {
+  position: absolute;
+  width: 200px;
+  margin: -75px 0 0 -50px;
+  padding: 40px;
+  background: #ffffffbf;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  text-align: center;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  border-radius: 5px;
+}
+
+#menu li {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
